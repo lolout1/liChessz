@@ -1,0 +1,23 @@
+<!-- indexui.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My ChessBot App</title>
+</head>
+<body>
+  <h1>Welcome to ChessBot!</h1>
+  <h2>Enter match url</h2>
+  <label for="url">Enter Chess Game URL:</label><br>
+  <input type="text" id="url" name="url"><br><br>
+
+ <label for="user">Enter Lichess Username, case sensitive:</label><br>
+<input type="text" id="user" name="user"><br>
+<div id="userError" style="color: red;"></div><br> <!-- Error message container -->
+<button id="submitBtn">Submit</button>
+  <button id="quitBtn">Refresh</button>
+  <!-- Include your renderer.js script -->
+  <script src="renderer.js"></script>
+</body>
+</html>

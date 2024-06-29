@@ -1,0 +1,47 @@
+{
+  "name": "chessbot",
+  "version": "1.0.0",
+  "main": "chessmain.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder",
+    "package-electron": "npx @electron/packager . chessbot --platform=win32 --arch=x64 --icon=assets/icon.ico --out=build_output --overwrite"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "An Electron-based ChessBot application",
+  "devDependencies": {
+    "@electron/packager": "^18.3.3",
+    "asar": "^3.2.0",
+    "electron": "^31.0.2",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.example.chessbot",
+    "productName": "chessbot",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "files": [
+      "indexui.html",
+      "preload.js",
+      "renderer.js",
+      "start-servers.bat",
+      "ChessCmakeGUI.exe",
+      "JSChess.js",
+      "app.asar"
+      {
+        "from": "node_modules/**/*",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "asar": true
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
