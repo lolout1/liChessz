@@ -31,7 +31,7 @@
       "start-servers.bat",
       "ChessCmakeGUI.exe",
       "JSChess.js",
-      "app.asar"
+      "app.asar",
       {
         "from": "node_modules/**/*",
         "filter": [
@@ -42,6 +42,7 @@
     "asar": true
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+ 
   }
 }
