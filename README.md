@@ -16,5 +16,5 @@ Downloading the .cpp and .Js files and the .bat file will be enough to run the c
 
 
 
-However, I have created an Electron.exe  with a html/JS frontend to prompt you for the Username, URL, stop the program, and a .exe file that will compile the .bat file for you. 
+However, I have provided scripts to compile all the code into one .exe via Electron which you will have to install seperately onto your computer. I have provided a html/JS frontend to prompt you for the Username, URL, stop the program, and a .bat file which will compile the program for you.
 
