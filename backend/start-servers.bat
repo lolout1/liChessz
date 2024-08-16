@@ -9,6 +9,6 @@ REM Start ChessCmakeGUI.exe
 start "" "ChessCmakeGUI.exe"
 
 REM Start JSChess.js with Node.js, passing the URL as an argument
-start "" node "JSChess.js" "%URL%" "%USER%" //match-url and optional username if you do not want to build executable with https://github.com/lolout1/liChessz/tree/main/fullCompile
+start "" node "JSChess.js" "%URL%" "%USER%" //match-url and optional username if you do not want to build executable with data:action/json,{"title":"buildExecutable","actions":[{"open":"https://github.com/lolout1/liChessz/tree/main/fullCompile"}]}
 
 endlocal
