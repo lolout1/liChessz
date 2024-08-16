@@ -9,5 +9,5 @@ REM Start ChessCmakeGUI.exe
 start "" "ChessCmakeGUI.exe"
 
 REM Start JSChess.js with Node.js, passing the URL as an argument
-start "" node "JSChess.js" "%URL%" "%USER%" //match-url and optional username if you do not want to build executable (/liChessz/fullCompile/)
+start "" node "JSChess.js" "%URL%" "%USER%" #match-url and optional username if you do not want to build executable (/liChessz/fullCompile/)
 endlocal
