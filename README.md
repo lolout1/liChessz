@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=S0QR3cFFFlM
 
-Lichess.org Chess Bot which takes an ongoing Lichess online match url as input and outputs the best possible move according to the stockfish api. 
+Chess Bot which takes an ongoing Lichess.org online match url as input upon startr up. Automously makes mouse movements to play the best move calculated @20 moves ahead (# is configurable) until the game is won/no longer ongoing.
 
 
 This program will prompt you for a match url and then leverage JS webscraping which communicates with a C++ Open CV script via TCP ports to calculate the current board pos and the fen translation. The fen translation of the current chess board state enables us to quickly and efficiently communicate with the stockfish C++ api who sends back the best move by calculating up to 10 moves ahead. Calculation for moves further than 10 moves is configurable in the ChessMakeGUI.exe source directory. 
